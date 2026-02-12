@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Someone Special ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, blue, #ff7eb3);
+            color: white;
+            overflow: hidden;
+        }
+
+        h1 {
+            margin-top: 100px;
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        #yesBtn {
+            background-color: white;
+            color: #ff4e50;
+        }
+
+        #noBtn {
+            background-color: black;
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Happy Valentine's Day Vanmathi 💙</h1>
+<p>Vanmathi, I have something special to tell you...</p>
+<p>You are not just a friend to me 💕</p>
+<p>You are truly my Angel 😇</p>
+<p>Will you be mine forever? ❤️</p>
+
+    <button id="yesBtn" onclick="yesClick()">Yes 💘</button>
+    <button id="noBtn" onmouseover="moveButton()">No 😜</button>
+
+    <script>
+function yesClick() {
+    alert("You just made me the happiest person ❤️\n\nFrom this moment, my heart belongs only to you 💕\n\nThis is the beginning of our beautiful story ✨\n\nI promise to respect you, support you, and stand by you forever 🤝❤️");
+}
+
+        function moveButton() {
+            var button = document.getElementById("noBtn");
+            var x = Math.random() * window.innerWidth;
+            var y = Math.random() * window.innerHeight;
+            button.style.left = x + "px";
+            button.style.top = y + "px";
+        }
+    </script>
+
+</body>
+</html>
